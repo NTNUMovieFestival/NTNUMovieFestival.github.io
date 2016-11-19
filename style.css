@@ -1,0 +1,98 @@
+html, body {height:100%;}
+.shadow{
+	text-shadow: 2px 2px 8px #AAAAAA;
+	color: #FFFFFF;
+}
+.bg{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+.navbar{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align:right;
+    z-index: 100;
+}
+.navelement{
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    color: #3e2121;
+    font-size: 18px;
+}
+.btn {
+    border-style:solid;
+    background-color:white;
+    border-color: white;
+    border-width: 0px;
+    border-bottom-width: 5px;
+}
+.btn:hover{
+    border-color: #eb121a;
+    color: #eb121a;
+    transition: 0.5s;
+}
+.fullpage{
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+    z-index: 0;
+    text-shadow: 2px 2px 8px #000000;
+}
+.break{
+    position: relative;
+    height: 33px;
+}
+.fullwidth{
+    position: relative;
+    vertical-align: middle;
+    width: 80%;
+    text-align: center;
+    color: white;
+    z-index: 0;
+    text-shadow: 2px 2px 8px #000000;
+    padding: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.midImage{
+    display:block;
+    margin: auto;
+    max-width: 600px;
+}
+#mtBack{
+    position: fixed;
+    z-index: -10;
+    width: 103%;
+    bottom: 0%;
+}
+#mtFront{
+    position: fixed;
+    z-index: -1;
+    width: 105%;
+    bottom: -10%;
+}
+#mountains{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    z-index: -10;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
