@@ -26,15 +26,20 @@
 <body>
 	<div class = "horizontal navbar">
 		<a href="#series"><div class = "navelement btn" onclick="closeMsg()"><b>各系列介紹</b></div></a>
-		<a href="#activity"><div class = "navelement btn" onclick="closeMsg()"><b>活動區</b></div></a>
+		<a href="#activity"><div class = "navelement btn" onclick="closeMsg()"><b>特別企劃區</b></div></a>
 		<a href="#about"><div class = "navelement btn" onclick="closeMsg()"><b>關於我們</b></div></a>
 		<a href="#news"><div class = "navelement btn" onclick="closeMsg()"><b>最新消息</b></div></a>
 		<a href="#sponse"><div class = "navelement btn" onclick="closeMsg()"><b>贊助</b></div></a>
-		<div class = "navelement">　　　</div>
+		<div class = "navelement"></div>
 	</div>
 	<div class = "fullpage">
 		<span class="helper"></span>
-		<img src="images/Logo.png" style="display:inline-block; margin: 0px auto; vertical-align: middle;  width:80%; max-width: 600px;">
+		<div style="display:inline-block; position:relative;vertical-align: middle;width:100%">
+			<img src="images/Logo.png" style="margin: 0px auto;  width:80%; max-width: 600px;">
+			<p id="fubiao" style="position:absolute; width:100%; text-align: center; bottom:-10%;opacity:0;transition:2.5s;"><i>這百年的滄桑阿!——「水來，他們在水裡哭喊 火來，他們在火中灼傷。」</i></p>
+		</div>
+		
+		
 		<div class="gradbubble" id="bub0"></div>
 		<div class="gradbubble" id="bub1"></div>
 		<div class="gradbubble" id="bub2"></div>
@@ -46,16 +51,15 @@
 		<div class = "break" id = "series"></div> 
 		<div class = "fullwidth"><h1>各系列介紹</h1>
 			<p>建置中</p>
-			<div class="seriesBtn" id = "s1" style="background-image: url('images/s1.jpg')">系列一<br>【土地x空間x戰爭】</div>
-			<div class="seriesBtn" id = "s2"  style="background-image: url('images/s2.jpg')">系列二<br>【環境影展】</div>
-			<div class="seriesBtn" id = "s3"  style="background-image: url('images/s3.jpg')">系列三<br>【臺灣電影發展】</div>
-			<div class="seriesBtn" id = "s4"  style="background-image: url('images/s4.jpg')">系列四<br>【轉型正義－過去與未來對話】</div>
+			<div class="seriesBtn" id = "s1" style="background-image: url('images/s1.jpg')">系列一<h3>【土地x空間x戰爭】</h3><i>11/22（二）-12/5（二）</i></div>
+			<div class="seriesBtn" id = "s2"  style="background-image: url('images/s2.jpg')">系列二<h3>【環境影展】</h3><i>12/2（五）-12/9（五）</i></div>
+			<div class="seriesBtn" id = "s3"  style="background-image: url('images/s3.jpg')">系列三<h3>【臺灣電影發展】</h3><i>12/12（一）-12/14（三）</i></div>
+			<div class="seriesBtn" id = "s4"  style="background-image: url('images/s4.jpg')">系列四<h3>【轉型正義－過去與未來對話】</h3><i>12/20（二）-12/29（五）</i></div>
 			</div>
 			<div class = "break" id = "activity"></div> 
-			<div class = "fullwidth"><h1>活動區</h1>
-			<h2>【馬拉松1118】</h2>
-			<p>◤師大人文電影節x特別企劃x人文電影馬拉松◢<br>
-			▍時間｜11月18日（五）<br>
+			<div class = "fullwidth"><h1>特別企劃區</h1>
+			<h2>【人文電影馬拉松】<a href="https://www.facebook.com/events/231412740606844/" target="new"><img src="images/outsrc.png"></a></h2>
+			<p>時間：11/18（五）12：15—22：00<br>
 			▍地點｜誠101<br>
 			▍費用｜Free，亦無需取票<br>
 			▍對象｜EVERYONE，每一個人，不限本校學生！<br>
@@ -72,32 +76,15 @@
 			>19:30-21:50《長情的告白》 *含映後座談<br>
 			***播映前十分鐘開放入場，開始放映15分鐘後禁止入場，請及早就座***</p>
 
-			<h2>【走讀樂生1204】</h2>
-			<p></p>
-			<h2>【TO師大分部人】</h2>
-			<p><b>塗鴉計畫w/ ALLO 黃紹綸</b><br>
-			場地（學七停車處/租鐵皮/貳樓工地(本部)）<br>
-			<b>抽獎</b><br>
-			學七品大</p>
-			<h2>【邀台北國高中生來看片】</h2>
-			<p>以老師/班級 為單位接洽<br>
-			接洽社福機構</p>
-			<h2>【特調限量 x 小森食光】</h2>
-			<p>12/01 左右　原本老農夫那家<br>
-			50杯（看預算）免費領/分享抽=>領的時候打卡</p>
+			<h2>【走讀樂生】</h2>
+			<p>時間：12/4（日） 13：30—17：00</p>
+
 			<h2>【校外微型電影院 x 小路上。藝文空間】</h2>
-			<p>＜千薰＞<br>
+			<p>時間：未定<br>＜千薰＞<br>
 			檔期預計：12/16<br>
 			放映：解離<br>
 			與談：蔡明彥導演+陳巍方老闆<br>
 			(有低消，預設100元，工人免)</p>
-			<h2>【快閃】</h2>
-			<p>＜佳蒨＞<br>
-			1220<br>
-			和吉他社合作（音樂，用一部片的主題曲）<br>
-			3首歌<br>
-			最後一首 美麗島 (合唱)<br>
-			日光大道</p>
 		</div>
 		<div class = "break" id = "about"></div> 
 		<div class = "fullwidth">
@@ -110,33 +97,27 @@
 			　　踏進校園，走近人群，一起看場電影，看場人生吧。<br><br><br>
 		</p>
 		<h2>成員介紹</h2>
-		<table border="0" align = "center" cellpadding="20" style="color:white;text-align:center;">
-			<tr>
-				<td><p>師大學生自治會</p></td>
-				<td><p>圖文傳播學會</p></td>
-				<td><p>歷史學會</p></td>
-			</tr>
-			<tr>
-				<td><p>地理學會</p></td>
-				<td><p>公民教育與活動領導學會</p></td>
-				<td><p>美術學會</p></td>
-			</tr>
-			<tr>
-				<td><p>師大青年社</p></td>
-				<td><p>師大學生事務處</p></td>
-				<td><p>全人教育中心</p></td>
-			</tr>
-		</table>
+		<div style="text-align: center;padding-left: 5%;">
+			<a href="https://www.facebook.com/ntnustua/" target="new"><div class="gotofb">師大學生自治會 <img src="images/outsrc.png"></div></a>
+			<a href="https://www.facebook.com/2014ntnugac/" target="new"><div class="gotofb">圖文傳播學會 <img src="images/outsrc.png"></div></a>
+			<a href="https://www.facebook.com/NTNUHIS/" target="new"><div class="gotofb">歷史學會 <img src="images/outsrc.png"></div></a>
+			<a href="https://www.facebook.com/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%E5%9C%B0%E7%90%86%E5%AD%B8%E6%9C%83-154247021312799/" target="new"><div class="gotofb">地理學會 <img src="images/outsrc.png"></div></a>
+			<a href="https://www.facebook.com/ntnucvesa/" target="new"><div class="gotofb">公民教育與活動領導學會 <img src="images/outsrc.png"></div></a>
+			<div class="gotofb">美術學會</div>
+			<a href="https://www.facebook.com/NTNU.Youth/" target="new"><div class="gotofb">師大青年社 <img src="images/outsrc.png"></div></a>
+			<a href="http://www.sa.ntnu.edu.tw/bin/home.php" target="new"><div class="gotofb">師大學生事務處 <img src="images/outsrc.png"></div></a>
+			<a href="https://www.facebook.com/NTNU.HEC/" target="new"><div class="gotofb">全人教育中心 <img src="images/outsrc.png"></div></a>
+		</div>
 	</div>
 	<div class = "break" id = "news"></div> 
 	<div class = "fullwidth"><h1>最新消息</h1>
-		<p>就跟著FB貼文的排程更新</p>
 		<a href="https://www.facebook.com/2016NTNUMovieFestival/"><div class="seriesBtn" style="background-image: url('images/fb.jpg'); height: 250px; width: 250px;"><span style="position:absolute;bottom:10px;width:100%;left:0px;text-align: center;color"><b>更多消息請點此至FB粉絲專頁</b></span></div></a>
 		</div>
 		<div class = "break" id = "sponse"></div> 
 		<div class = "fullwidth"><h1>贊助</h1>
-			<p>這邊結合粉專就可以更好談合作</p>
+			<p>歡迎各單位提供贊助，請至FB粉絲專頁與我們聯絡</p>
 		</div>
+		<div class = "break"></div> 
 	</div>
 	<div class = "fullwidth" style = "background-color:#3e2121;text-shadow: 2px 2px 8px #3e2121;text-align: center;"><p>2016 師大人文電影節<br></p>
 	</div>
@@ -147,11 +128,12 @@
 		<div class="gradbubble" id="bub9"></div>
 		<div class="gradbubble" id="bub10"></div>
 		<div class="gradbubble" id="bub11"></div>
-		
 	</div>
 	<div id = "msgbox">
 			<div id = "closeBtn"><img src="images/x.png"></div>
-			<iframe src="s1.html" id="Msgiframe" style="width: 100%; height: 100%;display: none"></iframe>
+			<div style="overflow:auto;-webkit-overflow-scrolling:touch">
+			  <iframe src="s1.html" id="Msgiframe" style="width: 100%; height: 100%;display: none"></iframe>
+			</div>
 		</div>
 	<div id = "mountains">
 		<img id = "mtBack" src="images/mtBack.png">
@@ -183,24 +165,40 @@
 	};
 	function bubinit(){
 		for (i = 0; i < 6; i++) {
-	  bubbles[i].style.left = ""+(Math.random()*80+5)+"%";
-	  bubbles[i].style.top = ""+(Math.random()*90+10)+"%";
-	  var bubsize = ""+(Math.random()*10+5)+"%"
-	  bubbles[i].style.width = bubsize;
-	  bubbles[i].style.height = bubsize;
-	  bubbles[i].style.opacity  = "1";
-	}
+		  bubbles[i].style.left = ""+(Math.random()*80+5)+"%";
+		  bubbles[i].style.top = ""+(Math.random()*90+10)+"%";
+		  var bubsize = (Math.random()*10+5)/100*(window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
+		  bubbles[i].style.width = ""+bubsize+"px";
+		  bubbles[i].style.height = ""+bubsize+"px";
+		  bubbles[i].style.opacity  = "1";
+		}
+		document.getElementById("fubiao").style.opacity="1";
+		document.getElementById("fubiao").style.bottom="0%";
 		window.setInterval(bubMove, 2400);
 	}
 	function bubMove(){
 		for (i = 0; i < 6; i++) {
 		  bubbles[i].style.left = ""+(Math.random()*80+5)+"%";
 		  bubbles[i].style.top = ""+(Math.random()*90+10)+"%";
-		  var bubsize = (Math.random()*10+5);
-		  bubbles[i].style.width = ""+bubsize+"%";
-		  bubbles[i].style.height = ""+(bubsize/100*(window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth))+"px";
+		  var bubsize = (Math.random()*10+5)/100*(window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
+		  bubbles[i].style.width = ""+bubsize+"px";
+		  bubbles[i].style.height = ""+bubsize+"px";
 		}
 	};
+	function msgboxBGInit(){
+		msgboxBG.style.opacity = "0.8";
+		msgboxBG.style.transition = "1s";
+		for (i = 0; i < 6; i++) {
+			var left = (Math.random()>0.5)? (Math.random()*16)-4:98-(Math.random()*16);
+			var top =  (Math.random()>0.5)? (Math.random()*16)-4:98-(Math.random()*16);
+		  Msgbubbles[i].style.left = ""+left+"%";
+		  Msgbubbles[i].style.top = ""+top+"%";
+		  var bubsize = (Math.random()*10+5)/100*(window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
+		  Msgbubbles[i].style.width = ""+bubsize+"px";
+		  Msgbubbles[i].style.height = ""+bubsize+"px";
+		  Msgbubbles[i].style.opacity  = "1";
+		}
+	}
 	function openMsg(event){
 		switch(event.target.id){
 			case "s1":
@@ -217,28 +215,36 @@
 			break;
 		}
 		msgboxBG.style.display = "block";
-		msgboxBG.style.opacity = "0.5";
-		msgbox.style.width = "80%";
-		msgbox.style.height = "80%";
-		msgbox.style.top = "10%";
-		msgbox.style.left = "10%";
+		msgboxBG.style.opacity = "0.0";
+		window.setTimeout(msgboxBGInit,10);
+		msgbox.style.width = "84%";
+		msgbox.style.height = "84%";
+		msgbox.style.top = "8%";
+		msgbox.style.left = "8%";
 		closeBtn.style.width = "50px";
 		closeBtn.style.height = "50px";
 		document.getElementById("Msgiframe").style.display = "block";
 		open = true;
-		console.log("open");
+		
 	};
 	function closeMsg(event){
 		if(open==true){
 			msgboxBG.style.display = "none";
 			msgboxBG.style.opacity = "0";
-			msgbox.style.width = "0%";
-			msgbox.style.height = "0%";
+			msgbox.style.width = "0px";
+			msgbox.style.height = "0px";
 			msgbox.style.top = "50%";
 			msgbox.style.left = "50%";
 			closeBtn.style.width = "0px";
 			closeBtn.style.height = "0px";
 			document.getElementById("Msgiframe").style.display = "none";
+		}
+		for (i = 0; i < 6; i++) {
+		  Msgbubbles[i].style.left = "50%";
+		  Msgbubbles[i].style.top = "50%";
+		  Msgbubbles[i].style.width = "10%";
+		  Msgbubbles[i].style.height = "10%";
+		  Msgbubbles[i].style.opacity  = "0";
 		}
 	};
 	document.body.addEventListener("mousemove", mtMove);
