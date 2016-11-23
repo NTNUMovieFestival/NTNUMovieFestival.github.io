@@ -6,8 +6,6 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>學生計算機年會 | Students' Information Technology Conference</title>
-
     <meta name="description" content="看電影讚讚讚">
 
     <meta property="og:title" content="師大人文電影節">
@@ -36,7 +34,7 @@
 		<span class="helper"></span>
 		<div style="display:inline-block; position:relative;vertical-align: middle;width:100%">
 			<img src="images/Logo.png" style="margin: 0px auto;  width:80%; max-width: 600px;">
-			<p id="fubiao" style="position:absolute; width:100%; text-align: center; bottom:-10%;opacity:0;transition:2.5s;"><i>這百年的滄桑阿!——「水來，他們在水裡哭喊 火來，他們在火中灼傷。」</i></p>
+			<p id="fubiao" style="position:absolute; width:100%; text-align: center; bottom:-10%;opacity:0;transition:2.5s;"><i>這百年的滄桑阿!——「水來，他們在水裡哭喊 火來，他們在火中灼傷。」</i><br><br><b>2016 11/22~12/29 <font color=#eb121a>國立臺灣師範大學</font></b></p>
 		</div>
 		
 		
@@ -50,11 +48,10 @@
 	<div class="article">
 		<div class = "break" id = "series"></div> 
 		<div class = "fullwidth"><h1>各系列介紹</h1>
-			<p>建置中</p>
-			<div class="seriesBtn" id = "s1" style="background-image: url('images/s1.jpg')">系列一<h3>【土地x空間x戰爭】</h3><i>11/22（二）-12/5（二）</i></div>
-			<div class="seriesBtn" id = "s2"  style="background-image: url('images/s2.jpg')">系列二<h3>【環境影展】</h3><i>12/2（五）-12/9（五）</i></div>
-			<div class="seriesBtn" id = "s3"  style="background-image: url('images/s3.jpg')">系列三<h3>【臺灣電影發展】</h3><i>12/12（一）-12/14（三）</i></div>
-			<div class="seriesBtn" id = "s4"  style="background-image: url('images/s4.jpg')">系列四<h3>【轉型正義－過去與未來對話】</h3><i>12/20（二）-12/29（五）</i></div>
+			<a href="s1.html" target="Msgiframe"><div class="seriesBtn" id = "s1" style="background-image: url('images/s1.jpg')">系列一<h3>【土地x空間x戰爭】</h3><i>11/22（二）-12/5（二）</i></div></a>
+			<a href="s2.html" target="Msgiframe"><div class="seriesBtn" id = "s2"  style="background-image: url('images/s2.jpg')">系列二<h3>【環境影展】</h3><i>12/2（五）-12/9（五）</i></div></a>
+			<a href="s3.html" target="Msgiframe"><div class="seriesBtn" id = "s3"  style="background-image: url('images/s3.jpg')">系列三<h3>【臺灣電影發展】</h3><i>12/12（一）-12/14（三）</i></div></a>
+			<a href="s4.html" target="Msgiframe"><div class="seriesBtn" id = "s4"  style="background-image: url('images/s4.jpg')">系列四<h3>【轉型正義－過去與未來對話】</h3><i>12/20（二）-12/29（五）</i></div></a>
 			</div>
 			<div class = "break" id = "activity"></div> 
 			<div class = "fullwidth"><h1>特別企劃區</h1>
@@ -75,13 +72,11 @@
 			>17:40-19:20《人間師格》 <br>
 			>19:30-21:50《長情的告白》 *含映後座談<br>
 			***播映前十分鐘開放入場，開始放映15分鐘後禁止入場，請及早就座***</p>
-
 			<h2>【走讀樂生】</h2>
 			<p>時間：12/4（日） 13：30—17：00</p>
 
 			<h2>【校外微型電影院 x 小路上。藝文空間】</h2>
-			<p>時間：未定<br>＜千薰＞<br>
-			檔期預計：12/16<br>
+			<p>時間：未定<br>
 			放映：解離<br>
 			與談：蔡明彥導演+陳巍方老闆<br>
 			(有低消，預設100元，工人免)</p>
@@ -119,7 +114,7 @@
 		</div>
 		<div class = "break"></div> 
 	</div>
-	<div class = "fullwidth" style = "background-color:#3e2121;text-shadow: 2px 2px 8px #3e2121;text-align: center;"><p>2016 師大人文電影節<br></p>
+	<div class = "fullwidth" style = "background-color:#3e2121;text-shadow: 2px 2px 8px #3e2121;text-align: center;"><p>©2016 師大人文電影節<br></p>
 	</div>
 	<div id = "msgboxBG">
 		<div class="gradbubble" id="bub6"></div>
@@ -131,8 +126,8 @@
 	</div>
 	<div id = "msgbox">
 			<div id = "closeBtn"><img src="images/x.png"></div>
-			<div style="overflow:auto;-webkit-overflow-scrolling:touch">
-			  <iframe src="s1.html" id="Msgiframe" style="width: 100%; height: 100%;display: none"></iframe>
+			<div style="overflow:auto; -webkit-overflow-scrolling:touch; z-index: 10;">
+			  <iframe src="" id="Msgiframe" style="width: 100%; height: 100%; display: none" name="Msgiframe"></iframe>
 			</div>
 		</div>
 	<div id = "mountains">
@@ -200,20 +195,6 @@
 		}
 	}
 	function openMsg(event){
-		switch(event.target.id){
-			case "s1":
-			Msgiframe.setAttribute("src", "s1.html");
-			break;
-			case "s2":
-			Msgiframe.setAttribute("src", "s2.html");
-			break;
-			case "s3":
-			Msgiframe.setAttribute("src", "s3.html");
-			break;
-			case "s4":
-			Msgiframe.setAttribute("src", "s4.html");
-			break;
-		}
 		msgboxBG.style.display = "block";
 		msgboxBG.style.opacity = "0.0";
 		window.setTimeout(msgboxBGInit,10);
@@ -249,12 +230,12 @@
 	};
 	document.body.addEventListener("mousemove", mtMove);
 	document.addEventListener("scroll", mscroll);
-	window.setTimeout(bubinit,100);
+	window.setTimeout(bubinit,250);
 	document.getElementById("s1").addEventListener("click", openMsg);
 	document.getElementById("s2").addEventListener("click", openMsg);
 	document.getElementById("s3").addEventListener("click", openMsg);
 	document.getElementById("s4").addEventListener("click", openMsg);
 	document.getElementById("closeBtn").addEventListener("click", closeMsg);
-	
+	document.getElementById("msgboxBG").addEventListener("click", closeMsg);
 </script>
 </html>

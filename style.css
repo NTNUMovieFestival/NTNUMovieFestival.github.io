@@ -1,4 +1,6 @@
-html{height:100%;}
+html{height:100%;
+	max-width: 100%;
+    overflow-x: hidden;}
 body{
 	height:100%;
 	margin: 0px;
@@ -88,9 +90,12 @@ body{
 .article{
 	display:block;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1500px;
 	margin: 0px auto;
 	text-align: left;
+	text-align: left;
+    color: white;
+	text-shadow: 2px 2px 8px #000000;
 }
 .midImage{
     display:block;
@@ -116,6 +121,7 @@ body{
     padding: 0px;
     margin: 0px;
     z-index: -10;
+    overflow: hidden;
 }
 .helper {
     display: inline-block;
@@ -164,8 +170,6 @@ body{
 	position: fixed;
 	opacity: 1;
 	border-radius: 20px;
-	overflow: auto;
-	-webkit-overflow-scrolling:touch;
 	width:0%;
 	height:0%;
 	top:50%;
@@ -175,6 +179,7 @@ body{
 }
 #closeBtn{
 	position: absolute;
+	z-index: 50;
 	right:0px;
 	top:0px;
 	background-color: #eb121a;
