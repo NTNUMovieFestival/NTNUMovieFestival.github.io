@@ -121,7 +121,6 @@ body{
     padding: 0px;
     margin: 0px;
     z-index: -10;
-    overflow: hidden;
 }
 .helper {
     display: inline-block;
