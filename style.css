@@ -210,3 +210,12 @@ iframe{
 .gotofb:hover{
 	text-decoration: underline;
 }
+a{
+	color: #fab8ba;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+	color: #eb121a;
+	transition: 0.2s;
+}
